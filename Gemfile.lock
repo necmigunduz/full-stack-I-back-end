@@ -76,14 +76,14 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     erubi (1.10.0)
-    fast_jsonapi (1.5)
-      activesupport (>= 4.2)
     ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
     hirb (0.7.3)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    jsonapi-serializer (2.2.0)
+      activesupport (>= 4.2)
     jwt (2.2.3)
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -167,8 +167,8 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   faker!
-  fast_jsonapi
   hirb
+  jsonapi-serializer
   jwt
   listen (~> 3.3)
   nokogiri
