@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Recipient.destroy_all
+[6..12].sample.times do
+    Recipient.create!(
+        name: Faker::FunnyName.name,
+        mailing_adress: Faker::Address.full_address,
+        preferences: Faker::Lorem.sentences(number: 1, supplemental: true)
+    )
+end
