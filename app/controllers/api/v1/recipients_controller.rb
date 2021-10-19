@@ -1,7 +1,7 @@
 class Api::V1::RecipientsController < ApplicationController
     def index 
         recipients = Recipient.all
-        render json: recipients
+        render json: RecipientSerializer.new(recipients)
     end
 
     private
