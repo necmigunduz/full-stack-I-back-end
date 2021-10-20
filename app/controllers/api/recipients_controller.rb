@@ -1,4 +1,4 @@
-class Api::V1::RecipientsController < ApplicationController
+class Api::RecipientsController < ApplicationController
     def index 
         recipients = Recipient.all
         render json: RecipientSerializer.new(recipients)
